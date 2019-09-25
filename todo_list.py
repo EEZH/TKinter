@@ -12,6 +12,7 @@ class TodoService:
             Todo("Подготовиться к зиме")
         ]
 
+
     def add_todo(self, todo):
         self.todos.append(todo)
         return self.todos
@@ -27,3 +28,5 @@ class TodoService:
             self.todos[id].description = description
 
         return self.todos
+
+
