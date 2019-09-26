@@ -7,7 +7,7 @@ root.title("My app")
 root.geometry("720x400")
 
 lbl = tk.Label(root, text=clicks_count)
-lbl.pack()
+lbl.place(x=30, y=50)
 # lbl["text"] = "next example"
 
 def click_up():
@@ -29,18 +29,18 @@ def click_common(is_up=True):
     lbl["text"] = clicks_count
 
 btn_up = tk.Button(root, text="Up", command=lambda : click_common())
-btn_up.place(x=0, y=0)
-btn_up.pack()
+btn_up.place(x=0, y=70)
+# btn_up.pack()
 
 btn_down = tk.Button(root, text="Down", command=lambda :click_common(is_up=False))
-btn_down.place(x=0, y=50)
-btn_down.pack()
+btn_down.place(x=0, y=90)
+# btn_down.pack()
 
 input = tk.Entry(root)
-input.pack()
+input.place(x=20, y=0)
 
 btn_get_input = tk.Button(root, text="Get input")
-btn_get_input.pack()
+btn_get_input.place(x=50, y=30)
 
 def  get_input():
     btn_get_input["text"] = input.get()
